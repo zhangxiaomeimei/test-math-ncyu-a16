@@ -1,3 +1,8 @@
+from flask import Flask, request, abort
+
+app = Flask(__name__)
+
+@app.route("/callback", methods=['POST'])
 
 print("Content-Type:text/html\r\n\r\n")
 print("<html>")
